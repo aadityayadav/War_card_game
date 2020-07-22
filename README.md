@@ -1,0 +1,4 @@
+# War_card_game
+A command line game to play the card game War with a computer. 
+All functions are stored inside three classes. First class player is initiated to begin gameplay. From a function inside class player instance of class deck is created and a function is called to randomly assign cards to the player and the computer. 
+Then from class player and instance of class Hand is created. Then function battlewinner is called. All other functions and nested functions are called inside batllewinner to prevent multiple calling of functions by the user. At the end of the funciton the user is asked if they wish to continue and if they choose yes then an instance of class hand is created again and the function battlewinner is called again. The game continues till either the player or the computer looses all their cards. Incase this happens the code quits and the winner is declared.
