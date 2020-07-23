@@ -93,17 +93,12 @@ class Hand():
         num_value_a=(int(split_return(self.card_player_a)))
         num_value_b=(int(split_return(self.card_player_b)))
 
-        print(self.pile)
-        print(self.player_a)
-        print(self.player_b)
         if num_value_a<num_value_b:
            for i in range(len(self.pile)):
                 for j in range(len(self.player_b)):
                     if self.player_b[j] != self.pile[i]:
                         self.player_b.append(self.pile[i])
            self.player_b=list(dict.fromkeys(self.player_b))
-           print(self.player_b)
-           print(self.pile)
 
 
            for q in self.pile:
@@ -111,7 +106,6 @@ class Hand():
                     if q==t:
                         self.player_a.remove(q)
            self.player_a=list(dict.fromkeys(self.player_a))
-           print(self.player_a)
 
 
            print("computer is the winner of this battle")
@@ -131,15 +125,13 @@ class Hand():
                     if self.player_a[j] != self.pile[i]:
                         self.player_a.append(self.pile[i])
            self.player_a=list(dict.fromkeys(self.player_a))
-           print(self.player_a)
-           print(self.pile)
 
            for q in self.pile:
                  for t in self.player_b:
                      if q==t:
                          self.player_b.remove(q)
            self.player_b=list(dict.fromkeys(self.player_b))
-           print(self.player_b)
+
 
            print("a is the winner of this battle")
            self.pile.clear()
